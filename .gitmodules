@@ -4,3 +4,6 @@
 [submodule "vim/pack/mypackages/start/YouCompleteMe"]
 	path = vim/pack/mypackages/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "vim/pack/mypackages/start/vim-airline-themes"]
+	path = vim/pack/mypackages/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
