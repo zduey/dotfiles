@@ -31,4 +31,4 @@ au BufNewFile, BufRead *.py
     \ set fileformat=unix
 
 let python_highlight_all=1
-
+map <C-n> :NERDTreeToggle<CR>
