@@ -1,4 +1,6 @@
 set nocompatible
+filetype-plugin on
+filetype-indent on
 
 " General Settings
 syntax on
@@ -31,4 +33,16 @@ au BufNewFile, BufRead *.py
     \ set fileformat=unix
 
 let python_highlight_all=1
+let g:pymode_python = 'python3'
+
+au BufNewFile, BufRead *.c
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+
 map <C-n> :NERDTreeToggle<CR>
