@@ -26,6 +26,14 @@ let g:airline_solarized_bg='dark'
 "let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
 
+" Scala settings
+au BufNewFile, Bufread *.sc*
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+    \ set textwidth=99
+
+
 " Python settings
 au BufNewFile, BufRead *.py
     \ set tabstop=4
