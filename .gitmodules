@@ -25,3 +25,6 @@
 [submodule "vim/pack/mypackages/opt/ensime-vim"]
 	path = vim/pack/mypackages/opt/ensime-vim
 	url = https://github.com/ensime/ensime-vim.git
+[submodule "vim/pack/mypackages/opt/deoplete"]
+	path = vim/pack/mypackages/opt/deoplete
+	url = https://github.com/Shougo/deoplete.nvim.git
