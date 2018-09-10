@@ -1,8 +1,8 @@
 [submodule "vim/pack/mypackages/start/vim-airline"]
 	path = vim/pack/mypackages/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/pack/mypackages/start/YouCompleteMe"]
-	path = vim/pack/mypackages/start/YouCompleteMe
+[submodule "vim/pack/mypackages/opt/YouCompleteMe"]
+	path = vim/pack/mypackages/opt/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "vim/pack/mypackages/start/vim-airline-themes"]
 	path = vim/pack/mypackages/start/vim-airline-themes
