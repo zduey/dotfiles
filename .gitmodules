@@ -31,3 +31,6 @@
 [submodule "vim/pack/mypackages/start/nvim-yarp"]
 	path = vim/pack/mypackages/start/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp.git
+[submodule "vim/pack/mypackages/start/vim-hug-neovim"]
+	path = vim/pack/mypackages/start/vim-hug-neovim
+	url = https://github.com/roxma/vim-hug-neovim-rpc.git
