@@ -22,3 +22,6 @@
 [submodule "vim/pack/mypackages/opt/vim-scala"]
 	path = vim/pack/mypackages/opt/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "vim/pack/mypackages/opt/ensime-vim"]
+	path = vim/pack/mypackages/opt/ensime-vim
+	url = https://github.com/ensime/ensime-vim.git
