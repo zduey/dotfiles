@@ -37,6 +37,10 @@ au BufNewFile, Bufread *.sc*
 let g:scala_sort_across_groups=1
 let g:scala_scaladoc_indent = 1
 
+" ensime-vim
+autocmd BufWritePost *.scala silent :EnTypeCheck
+nnoremap <localleader>t: EnType<CR>
+
 " Python settings
 au BufNewFile, BufRead *.py
     \ set tabstop=4
