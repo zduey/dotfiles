@@ -33,6 +33,9 @@ au BufNewFile, Bufread *.sc*
     \ set shiftwidth=2
     \ set textwidth=99
 
+" vim-scala
+let g:scala_sort_across_groups=1
+let g:scala_scaladoc_indent = 1
 
 " Python settings
 au BufNewFile, BufRead *.py
