@@ -22,6 +22,3 @@
 [submodule "vim/pack/mypackages/opt/vim-scala"]
 	path = vim/pack/mypackages/opt/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "vim/pack/mypackages/start/syntastic"]
-	path = vim/pack/mypackages/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
