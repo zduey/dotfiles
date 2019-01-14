@@ -28,3 +28,9 @@
 [submodule "vim/pack/mypackages/start/nerdtree"]
 	path = vim/pack/mypackages/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/pack/mypackages/python-mode"]
+	path = vim/pack/mypackages/python-mode
+	url = https://github.com/python-mode/python-mode.git
+[submodule "vim/pack/mypackages/start/python-mode"]
+	path = vim/pack/mypackages/start/python-mode
+	url = https://github.com/python-mode/python-mode.git
