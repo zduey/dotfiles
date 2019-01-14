@@ -31,3 +31,6 @@
 [submodule "vim/pack/mypackages/opt/vim-hug-neovim"]
 	path = vim/pack/mypackages/opt/vim-hug-neovim
 	url = https://github.com/roxma/vim-hug-neovim-rpc.git
+[submodule "vim/pack/mypackages/start/nerdtree"]
+	path = vim/pack/mypackages/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
