@@ -101,6 +101,6 @@ let g:ctrlp_by_filename = 1 " search by file name not path
 "let b:ale_fixers = ['autopep8', 'yapf']
 
 " python-mode settings
-let g:pymode = 1
-let g:pymode_doc = 0
 set completeopt=menu
+let g:pymode_lint_cwindow = 0
+let g:pymode_rope = 1
