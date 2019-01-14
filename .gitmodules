@@ -10,9 +10,6 @@
 [submodule "vim/pack/mypackages/start/ale"]
 	path = vim/pack/mypackages/start/ale
 	url = https://github.com/w0rp/ale.git
-[submodule "vim/pack/mypackages/start/python-mode"]
-	path = vim/pack/mypackages/start/python-mode
-	url = https://github.com/python-mode/python-mode.git
 [submodule "vim/pack/mypackages/opt/vim-scala"]
 	path = vim/pack/mypackages/opt/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
