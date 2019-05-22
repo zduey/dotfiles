@@ -31,3 +31,6 @@
 [submodule "vim/pack/mypackages/start/python-mode"]
 	path = vim/pack/mypackages/start/python-mode
 	url = https://github.com/python-mode/python-mode.git
+[submodule "vim/pack/mypackages/start/vim-solarized"]
+	path = vim/pack/mypackages/start/vim-solarized
+	url = https://github.com/vim-scripts/Solarized.git
