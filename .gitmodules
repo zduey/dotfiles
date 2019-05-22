@@ -1,14 +1,5 @@
-[submodule "vim/pack/mypackages/start/vim-airline"]
-	path = vim/pack/mypackages/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/pack/mypackages/start/vim-airline-themes"]
-	path = vim/pack/mypackages/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "vim/pack/mypackages/start/tmuxline"]
-	path = vim/pack/mypackages/start/tmuxline
-	url = https://github.com/edkolev/tmuxline.vim
-[submodule "vim/pack/mypackages/opt/vim-scala"]
-	path = vim/pack/mypackages/opt/vim-scala
+[submodule "vim/pack/mypackages/start/vim-scala"]
+	path = vim/pack/mypackages/start/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "vim/pack/mypackages/opt/ensime-vim"]
 	path = vim/pack/mypackages/opt/ensime-vim
