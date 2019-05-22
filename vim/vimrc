@@ -1,8 +1,5 @@
 set nocompatible
 
-" General Settings
-syntax on
-
 set showmatch
 set relativenumber
 set showmatch
@@ -39,13 +36,14 @@ set statusline+=[line:%l]                           " current line
 set statusline+=[%p%%]                              " percentage through file
 
 " Miscellaneous settings
-syntax enable
 filetype on
 filetype plugin on
 filetype plugin indent on
 highlight Pmenu ctermfg=blue ctermbg=white
 set colorcolumn=81
 highlight ColorColumn ctermbg=lightblue
+syntax enable
+let g:solarized_termcolors = 16
 set background=dark
 colorscheme solarized
 
