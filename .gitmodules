@@ -25,3 +25,12 @@
 [submodule "vim/pack/mypackages/start/vim-solarized"]
 	path = vim/pack/mypackages/start/vim-solarized
 	url = https://github.com/vim-scripts/Solarized.git
+[submodule "vim/pack/mypackages/start/vim-airline"]
+	path = vim/pack/mypackages/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/pack/mypackages/start/vim-tmuxline"]
+	path = vim/pack/mypackages/start/vim-tmuxline
+	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "vim/pack/mypackages/start/vim-airline-themes"]
+	path = vim/pack/mypackages/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git

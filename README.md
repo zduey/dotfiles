@@ -14,3 +14,6 @@ ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/.bash_profile ~/.bash_profile
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ```
+
+## Notes
+[Vim8 Intro](https://shapeshed.com/vim-packages/)

@@ -1,6 +1,8 @@
+let g:airgline
 set nocompatible
 
 set showmatch
+set t_Co=256
 set relativenumber
 set showmatch
 set expandtab
@@ -117,11 +119,11 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_by_filename = 1 " search by file name not path
 
-" Ale Settings
-"let g:airline#extensions#ale#enabled = 1
-"let b:ale_fixers = ['autopep8', 'yapf']
-
 " python-mode settings
 set completeopt=menu
 let g:pymode_lint_cwindow = 0
 let g:pymode_rope = 1
+
+" Airline settings
+let g:airline#extensions#tmuxline#enabled = 1
+let g:airline_powerline_fonts = 1
