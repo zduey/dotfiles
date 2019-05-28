@@ -18,7 +18,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Searh settings
+" Search settings
 set incsearch
 set hlsearch
 set ignorecase
@@ -126,3 +126,6 @@ let g:pymode_rope = 1
 " Airline settings
 let g:airline#extensions#tmuxline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+" GitGutter Settings
+set updatetime=100
