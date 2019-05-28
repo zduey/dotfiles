@@ -1,4 +1,3 @@
-let g:airgline
 set nocompatible
 
 set showmatch
