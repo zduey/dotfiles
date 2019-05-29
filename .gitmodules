@@ -40,3 +40,6 @@
 [submodule "vim/pack/mypackages/start/vim-fugitive"]
 	path = vim/pack/mypackages/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/pack/mypackages/start/vim-polyglot"]
+	path = vim/pack/mypackages/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
