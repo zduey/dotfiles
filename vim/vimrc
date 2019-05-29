@@ -18,6 +18,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" FZF settings
+set rtp+=/usr/local/opt/fzf
+nnoremap <C-p> :Files<CR>
+nnoremap <Leader>t :BTags<CR>
+nnoremap <Leader>T :Tags<CR>
+
 " Search settings
 set incsearch
 set hlsearch
@@ -128,4 +134,4 @@ let g:airline#extensions#tmuxline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " GitGutter Settings
-set updatetime=100
+set updatetime=500
