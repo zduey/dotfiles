@@ -73,11 +73,10 @@ if executable('ag')
 endif
 
 " Scala settings
-au BufNewFile, Bufread *.sc*
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
-    \ set textwidth=99
+autocmd FileType scala set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=99
+
+" Javascript settings
+autocmd FileType javascript set softtabstop=2 shiftwidth=2 tabstop=2 expandtab
 
 " vim-scala
 let g:scala_sort_across_groups=1
@@ -88,20 +87,12 @@ autocmd BufWritePost *.scala silent :EnTypeCheck
 nnoremap <localleader>t: EnType<CR>
 
 " Python settings
-au BufNewFile, BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
+autocmd FileType python set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79
 
 " C Settings
-au BufNewFile, BufRead *.c
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
+autocmd FileType c set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79
 
-""" NERDTree Settings
+" NERDTree Settings
 map <C-n> :NERDTreeToggle<CR>
 
 " All nerdtree to modify files
