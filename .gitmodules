@@ -49,3 +49,6 @@
 [submodule "vim/pack/mypackages/start/vim-gutentags"]
 	path = vim/pack/mypackages/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "vim/pack/mypackages/start/black"]
+	path = vim/pack/mypackages/start/black
+	url = https://github.com/python/black.git
