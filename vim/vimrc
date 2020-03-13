@@ -88,6 +88,7 @@ nnoremap <localleader>t: EnType<CR>
 
 " Python settings
 autocmd FileType python set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79
+autocmd BufWritePre *.py execute ':Black'
 
 " C Settings
 autocmd FileType c set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79
