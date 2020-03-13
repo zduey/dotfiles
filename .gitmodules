@@ -52,3 +52,6 @@
 [submodule "vim/pack/mypackages/start/black"]
 	path = vim/pack/mypackages/start/black
 	url = https://github.com/python/black.git
+[submodule "vim/pack/mypackages/start/nvimr"]
+	path = vim/pack/mypackages/start/nvimr
+	url = https://github.com/jalvesaq/Nvim-R.git
