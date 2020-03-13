@@ -7,9 +7,6 @@
 [submodule "vim/pack/mypackages/opt/deoplete"]
 	path = vim/pack/mypackages/opt/deoplete
 	url = https://github.com/Shougo/deoplete.nvim.git
-[submodule "vim/pack/mypackages/start/ctrlp.vim"]
-	path = vim/pack/mypackages/start/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim/pack/mypackages/opt/nvim-yarp"]
 	path = vim/pack/mypackages/opt/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp.git
@@ -19,9 +16,6 @@
 [submodule "vim/pack/mypackages/start/nerdtree"]
 	path = vim/pack/mypackages/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/pack/mypackages/start/python-mode"]
-	path = vim/pack/mypackages/start/python-mode
-	url = https://github.com/python-mode/python-mode.git
 [submodule "vim/pack/mypackages/start/vim-solarized"]
 	path = vim/pack/mypackages/start/vim-solarized
 	url = https://github.com/vim-scripts/Solarized.git
@@ -40,3 +34,21 @@
 [submodule "vim/pack/mypackages/start/vim-fugitive"]
 	path = vim/pack/mypackages/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/pack/mypackages/start/vim-polyglot"]
+	path = vim/pack/mypackages/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "vim/pack/mypackages/start/ale"]
+	path = vim/pack/mypackages/start/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "vim/pack/mypackages/start/coc"]
+	path = vim/pack/mypackages/start/coc
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "vim/pack/mypackages/start/fzf"]
+	path = vim/pack/mypackages/start/fzf
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "vim/pack/mypackages/start/vim-gutentags"]
+	path = vim/pack/mypackages/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "vim/pack/mypackages/start/black"]
+	path = vim/pack/mypackages/start/black
+	url = https://github.com/python/black.git
