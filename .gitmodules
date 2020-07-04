@@ -52,3 +52,6 @@
 [submodule "vim/pack/mypackages/start/black"]
 	path = vim/pack/mypackages/start/black
 	url = https://github.com/python/black.git
+[submodule "vim/pack/mypackages/start/vimtex"]
+	path = vim/pack/mypackages/start/vimtex
+	url = https://github.com/lervag/vimtex.git
