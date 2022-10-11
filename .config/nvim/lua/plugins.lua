@@ -24,6 +24,10 @@ return require('packer').startup({
     -- Plugins
     use({'wbthomason/packer.nvim'})
     use({
+      'williamboman/mason.nvim',
+      config = "require('config.mason').post()",
+    })
+    use({
       'nvim-tree/nvim-tree.lua',
       requires = {
         'nvim-tree/nvim-web-devicons', -- optional, for file icons
