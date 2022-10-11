@@ -1,10 +1,7 @@
 -- global
-vim.g.mapleader = " "
-vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- commands
-vim.cmd("colorscheme nightfox")
 vim.cmd([[filetype plugin indent on]])
 
 -- settings

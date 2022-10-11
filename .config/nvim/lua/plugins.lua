@@ -21,13 +21,27 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup({
   function(use)
-    -- Plugins
-    use({'wbthomason/packer.nvim'}) -- package manager
+    -- Package Manager
+    use({'wbthomason/packer.nvim'})
+    -- Color Scheme
+    use({
+      "EdenEast/nightfox.nvim",
+      config = function()
+        vim.cmd "colorscheme nightfox"
+      end,
+    })
+    -- Git
+    use {
+      "TimUntersberger/neogit",
+      requires = "nvim-lua/plenary.nvim",
+      config = function()
+        require("config.neogit").setup()
+      end,
+    }
     use({
       'williamboman/mason.nvim', -- all other packages manager (lsp, dap, formatters, etc.)
       config = "require('config.mason').post()",
     })
-    use({"EdenEast/nightfox.nvim"}) -- colorscheme
     use({
       'nvim-tree/nvim-tree.lua', -- NerdTree replacement
       requires = {
@@ -37,6 +51,10 @@ return require('packer').startup({
       keys = "<leader>n",
       config = "require('config.filetree').post()",
     })
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    }
     if packer_bootstrap then
     require('packer').sync()
     end
