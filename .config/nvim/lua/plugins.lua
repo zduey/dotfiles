@@ -22,12 +22,12 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup({
   function(use)
     -- Plugins
-    use({"EdenEast/nightfox.nvim"}) -- colorscheme
     use({'wbthomason/packer.nvim'}) -- package manager
     use({
       'williamboman/mason.nvim', -- all other packages manager (lsp, dap, formatters, etc.)
       config = "require('config.mason').post()",
     })
+    use({"EdenEast/nightfox.nvim"}) -- colorscheme
     use({
       'nvim-tree/nvim-tree.lua', -- NerdTree replacement
       requires = {
