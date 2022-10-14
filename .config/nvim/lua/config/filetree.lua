@@ -11,6 +11,17 @@ function M.post()
     "<CMD>NvimTreeToggle<CR>",
     { silent = true, noremap = true }
   )
-  require('nvim-tree').setup()
+  require('nvim-tree').setup({
+    disable_netrw = true,
+    hijack_netrw = true,
+    update_cwd = true,
+    update_focused_file = {
+      enable = true,
+      update_cwd = true,
+    },
+  }
+
+  vim.g.nvim_tree_respect_buf_cwd = 1
+  })
 end
 return M
