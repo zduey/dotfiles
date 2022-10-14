@@ -50,8 +50,11 @@ return require('packer').startup({
       requires = {
         'nvim-tree/nvim-web-devicons', -- optional, for file icons
       },
-      keys = "<leader>n",
-      config = "require('config.filetree').post()",
+      -- ensures this place nicely with whichkey
+      cmd = { "NvimTreeToggle", "NvimTreeClose" },
+        config = function()
+          require("config.nvimtree").setup()
+        end,
     })
     use {
       'nvim-treesitter/nvim-treesitter',

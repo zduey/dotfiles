@@ -42,6 +42,10 @@ function M.setup()
       name = "Git",
       s = { "<CMD>Neogit<CR>", "Status" },
     },
+    f = {
+      name = "Find",
+      e = { "<CMD>NvimTreeToggle<CR>", "File Explorer" },
+    },
   }
 
   whichkey.setup(conf)
