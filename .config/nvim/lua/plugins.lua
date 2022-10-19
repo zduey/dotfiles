@@ -77,6 +77,16 @@ function M.setup ()
       end,
     })
 
+    -- Better file explorer
+    use({
+      "kyazdani42/nvim-tree.lua",
+      wants = "nvim-web-devicons",
+      cmd = { "NvimTreeToggle", "NvimTreeClose" },
+      config = function()
+        require("config.nvimtree").setup()
+      end,
+    })
+
     -- Bootstrap packer if required
     if packer_sync_required then
       require("notify")("Restart Neovim for changes to take effect.")

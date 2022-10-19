@@ -22,6 +22,7 @@ function M.setup()
   local mappings = {
     ["w"] = { "<CMD>update!<CR>", "Save" },
     ["q"] = { "<CMD>q!<CR>", "Quit" },
+    ["t"] = { "<CMD>NvimTreeToggle<CR>", "File Tree" },
 
     b = {
       name = "Buffer",
