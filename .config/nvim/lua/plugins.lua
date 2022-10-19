@@ -40,6 +40,9 @@ function M.setup ()
     -- Package management
     use("wbthomason/packer.nvim")
 
+    -- Lua-based helpers
+    use("nvim-lua/plenary.nvim")
+
     -- Colorscheme
     use({
       "EdenEast/nightfox.nvim",
@@ -49,7 +52,7 @@ function M.setup ()
     })
 
     -- Key mapping help
-    use ({
+    use({
       "folke/which-key.nvim",
       config = function()
         require("config.whichkey").setup()
@@ -57,11 +60,20 @@ function M.setup ()
     })
 
     -- Notifications
-    use ({
+    use({
       "rcarriga/nvim-notify",
       event = "VimEnter",
       config = function()
         vim.notify = require("notify")
+      end,
+    })
+
+    -- Improved notifications
+    use({
+      "kyazdani42/nvim-web-devicons",
+      module = "nvim-web-devicons",
+      config = function()
+        require("nvim-web-devicons").setup({ default = true })
       end,
     })
 
