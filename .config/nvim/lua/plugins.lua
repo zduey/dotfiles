@@ -125,7 +125,11 @@ function M.setup ()
     use({
       "nvim-telescope/telescope.nvim",
       requires = {
-        "nvim-lua/plenary.nvim"
+        "nvim-lua/plenary.nvim",
+        "nvim-lua/popup.nvim",
+        "nvim-telescope/telescope-file-browser.nvim",
+        {"nvim-telescope/telescope-fzf-native.nvim", run="make"},
+        "cljoly/telescope-repo.nvim",
       }
     })
 

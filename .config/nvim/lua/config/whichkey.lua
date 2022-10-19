@@ -23,6 +23,7 @@ function M.setup()
     ["w"] = { "<CMD>update!<CR>", "Save" },
     ["q"] = { "<CMD>q!<CR>", "Quit" },
     ["t"] = { "<CMD>NvimTreeToggle<CR>", "File Tree" },
+    ["s"] = { "<CMD>Telescope find_files<CR>", "Search" },
 
     b = {
       name = "Buffer",
@@ -41,25 +42,26 @@ function M.setup()
 
     v = {
       name = "View",
-      m = {"<CMD>MarkdownPreview<CR>", "Markdown"},
+      m = {"<CMD>MarkdownPreview<CR>", "Markdown" },
     },
 
     g = {
       name = "Git",
-      s = {"<CMD>Neogit<CR>", "Status"},
-      d = {"<CMD>DiffviewOpen<CR>", "Diff"},
-      h = {"<CMD>DiffviewFileHistory<CR>", "History"},
+      s = { "<CMD>Neogit<CR>", "Status" },
+      d = { "<CMD>DiffviewOpen<CR>", "Diff" },
+      h = { "<CMD>DiffviewFileHistory<CR>", "History" },
     },
 
     f = {
       name = "Find",
-      f = {"<CMD>Telescope find_files<CR>", "Files"},
-      b = {"<CMD>Telescope buffers<CR>", "Buffers"},
-      o = {"<CMD>Telescope oldfiles<CR>", "Old Files"},
-      g = {"<CMD>Telescope live_grep<CR>", "Live Grep"},
-      c = {"<CMD>Telescope commands<CR>", "Commands"},
-      r = {"<CMD>Telescope file_browser<CR>", "Browser"},
-      w = {"<CMD>Telescope current_buffer_fuzzy_find<CR>", "Current Buffer"}
+      f = { "<CMD>Telescope find_files<CR>", "Files" },
+      b = { "<CMD>Telescope buffers<CR>", "Buffers" },
+      o = { "<CMD>Telescope oldfiles<CR>", "Old Files" },
+      g = { "<CMD>Telescope live_grep<CR>", "Live Grep" },
+      c = { "<CMD>Telescope commands<CR>", "Commands" },
+      b = { "<CMD>Telescope file_browser<CR>", "Browser" },
+      w = { "<CMD>Telescope current_buffer_fuzzy_find<CR>", "Current Buffer" },
+      r = { "<CMD>Telescope repo list<CR>", "Repos" },
     },
   }
 
