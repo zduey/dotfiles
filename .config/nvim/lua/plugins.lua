@@ -68,7 +68,7 @@ function M.setup ()
       end,
     })
 
-    -- Improved notifications
+    -- Improved icons
     use({
       "kyazdani42/nvim-web-devicons",
       module = "nvim-web-devicons",
