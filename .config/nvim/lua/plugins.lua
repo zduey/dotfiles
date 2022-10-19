@@ -101,12 +101,20 @@ function M.setup ()
       requires = "nvim-lua/plenary.nvim"
     })
 
-    -- Neogit
+    -- Git
   	use({
       "TimUntersberger/neogit",
       requires = "nvim-lua/plenary.nvim",
       config = function()
         require("config.neogit").setup()
+      end,
+    })
+
+    -- Treesitter
+    use({
+      "nvim-treesitter/nvim-treesitter",
+      run = function()
+        require('nvim-treesitter.install').update({ with_sync = true })
       end,
     })
 
