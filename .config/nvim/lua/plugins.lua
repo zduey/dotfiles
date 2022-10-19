@@ -52,9 +52,18 @@ function M.setup ()
       end,
     })
 
+    -- Notifications
+    use ({
+      "rcarriga/nvim-notify",
+      event = "VimEnter",
+      config = function()
+        vim.notify = require("notify")
+      end,
+    })
+
     -- Bootstrap packer if required
     if packer_sync_required then
-      print("Restart Neovim for changes to take effect.")
+      require("notify")("Restart Neovim for changes to take effect.")
       require("packer").sync()
     end
   end
