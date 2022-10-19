@@ -110,7 +110,7 @@ function M.setup ()
       end,
     })
 
-    -- Treesitter
+    -- Treesitter (single-file highlighting/etc.)
     use({
       "nvim-treesitter/nvim-treesitter",
       run = function()
@@ -119,6 +119,14 @@ function M.setup ()
       config = function()
         require("config.treesitter").setup()
       end,
+    })
+
+    -- Telescope (fuzzy search)
+    use({
+      "nvim-telescope/telescope.nvim",
+      requires = {
+        "nvim-lua/plenary.nvim"
+      }
     })
 
     -- Bootstrap packer if required

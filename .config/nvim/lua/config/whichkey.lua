@@ -49,7 +49,18 @@ function M.setup()
       s = {"<CMD>Neogit<CR>", "Status"},
       d = {"<CMD>DiffviewOpen<CR>", "Diff"},
       h = {"<CMD>DiffviewFileHistory<CR>", "History"},
-    }
+    },
+
+    f = {
+      name = "Find",
+      f = {"<CMD>Telescope find_files<CR>", "Files"},
+      b = {"<CMD>Telescope buffers<CR>", "Buffers"},
+      o = {"<CMD>Telescope oldfiles<CR>", "Old Files"},
+      g = {"<CMD>Telescope live_grep<CR>", "Live Grep"},
+      c = {"<CMD>Telescope commands<CR>", "Commands"},
+      r = {"<CMD>Telescope file_browser<CR>", "Browser"},
+      w = {"<CMD>Telescope current_buffer_fuzzy_find<CR>", "Current Buffer"}
+    },
   }
 
   whichkey.setup(conf)
