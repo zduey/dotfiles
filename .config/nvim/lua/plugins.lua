@@ -36,8 +36,17 @@ function M.setup ()
     -- Package management
     use("wbthomason/packer.nvim")
 
+    -- Colorscheme
+    use({
+      "EdenEast/nightfox.nvim",
+      config = function()
+        vim.cmd "colorscheme nightfox"
+      end,
+    })
+
     -- Bootstrap packer if required
     if packer_sync_required then
+      print("Restart Neovim for changes to take effect.")
       require("packer").sync()
     end
   end
