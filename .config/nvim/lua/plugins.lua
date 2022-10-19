@@ -5,6 +5,10 @@ function M.setup ()
   local packer_sync_required  = false
 
   local packer_config = {
+    profile = {
+      enable = true,
+      threshold = 1,
+    },
     display = {
       open_fn = function()
         return require("packer.util").float { border = "single" }
