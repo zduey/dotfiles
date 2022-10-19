@@ -38,6 +38,13 @@ function M.setup()
       S = { "<CMD>PackerStatus<CR>", "Status" },
       u = { "<CMD>PackerUpdate<CR>", "Update" },
     },
+
+    v = {
+      name = "View",
+      m = {"<CMD>MarkdownPreview<CR>", "Markdown"},
+      d = {"<CMD>DiffviewOpen<CR>", "Diff"},
+      h = {"<CMD>DiffviewFileHistory<CR>", "History"},
+    }
   }
 
   whichkey.setup(conf)

@@ -95,6 +95,12 @@ function M.setup ()
       end,
     })
 
+    -- Diffview
+    use({
+      "sindrets/diffview.nvim",
+      requires = "nvim-lua/plenary.nvim"
+    })
+
     -- Bootstrap packer if required
     if packer_sync_required then
       require("notify")("Restart Neovim for changes to take effect.")
