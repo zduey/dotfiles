@@ -101,6 +101,15 @@ function M.setup ()
       requires = "nvim-lua/plenary.nvim"
     })
 
+    -- Neogit
+  	use({
+      "TimUntersberger/neogit",
+      requires = "nvim-lua/plenary.nvim",
+      config = function()
+        require("config.neogit").setup()
+      end,
+    })
+
     -- Bootstrap packer if required
     if packer_sync_required then
       require("notify")("Restart Neovim for changes to take effect.")

@@ -42,6 +42,11 @@ function M.setup()
     v = {
       name = "View",
       m = {"<CMD>MarkdownPreview<CR>", "Markdown"},
+    },
+
+    g = {
+      name = "Git",
+      s = {"<CMD>Neogit<CR>", "Status"},
       d = {"<CMD>DiffviewOpen<CR>", "Diff"},
       h = {"<CMD>DiffviewFileHistory<CR>", "History"},
     }
