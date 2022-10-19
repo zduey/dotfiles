@@ -116,6 +116,9 @@ function M.setup ()
       run = function()
         require('nvim-treesitter.install').update({ with_sync = true })
       end,
+      config = function()
+        require("config.treesitter").setup()
+      end,
     })
 
     -- Bootstrap packer if required
