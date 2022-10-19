@@ -44,6 +44,14 @@ function M.setup ()
       end,
     })
 
+    -- Key mapping help
+    use ({
+      "folke/which-key.nvim",
+      config = function()
+        require("config.whichkey").setup()
+      end,
+    })
+
     -- Bootstrap packer if required
     if packer_sync_required then
       print("Restart Neovim for changes to take effect.")
