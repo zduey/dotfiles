@@ -135,6 +135,35 @@ function M.setup ()
       }
     })
 
+    -- Completion
+    use({
+      "hrsh7th/nvim-cmp",
+      wants = { "LuaSnip" },
+      requires = {
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-cmdline",
+        "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-nvim-lua",
+        "hrsh7th/cmp-path",
+        {
+          "L3MON4D3/LuaSnip",
+          wants = "friendly-snippets",
+          config = function()
+            require("config.luasnip").setup()
+          end,
+        },
+        "petertriho/cmp-git",
+        "rafamadriz/friendly-snippets",
+        "ray-x/cmp-treesitter",
+        "saadparwaiz1/cmp_luasnip",
+        "zbirenbaum/copilot.lua",
+        "zbirenbaum/copilot-cmp"
+      },
+      config = function()
+        require("config.completion").setup()
+      end,
+    })
+
     -- Bootstrap packer if required
     if packer_sync_required then
       require("notify")("Restart Neovim for changes to take effect.")
