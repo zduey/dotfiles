@@ -136,15 +136,24 @@ function M.setup ()
     })
 
     -- Completion
-    use({
+    use {
       "hrsh7th/nvim-cmp",
+      event = "InsertEnter",
+      opt = true,
+      config = function()
+        require("config.completion").setup()
+      end,
       wants = { "LuaSnip" },
       requires = {
         "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-cmdline",
-        "hrsh7th/cmp-nvim-lsp",
-        "hrsh7th/cmp-nvim-lua",
         "hrsh7th/cmp-path",
+        "hrsh7th/cmp-nvim-lua",
+        "ray-x/cmp-treesitter",
+        "hrsh7th/cmp-cmdline",
+        "saadparwaiz1/cmp_luasnip",
+        "hrsh7th/cmp-calc",
+        "f3fora/cmp-spell",
+        "hrsh7th/cmp-emoji",
         {
           "L3MON4D3/LuaSnip",
           wants = "friendly-snippets",
@@ -152,18 +161,10 @@ function M.setup ()
             require("config.luasnip").setup()
           end,
         },
-        "petertriho/cmp-git",
         "rafamadriz/friendly-snippets",
-        "ray-x/cmp-treesitter",
-        "saadparwaiz1/cmp_luasnip",
-        "zbirenbaum/copilot.lua",
-        "zbirenbaum/copilot-cmp"
+        disable = false,
       },
-      config = function()
-        require("config.completion").setup()
-      end,
-    })
-
+    }
     -- Bootstrap packer if required
     if packer_sync_required then
       require("notify")("Restart Neovim for changes to take effect.")
