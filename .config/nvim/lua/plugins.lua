@@ -109,6 +109,8 @@ function M.setup ()
         require("config.neogit").setup()
       end,
     })
+    -- Git messenger for displaying popup with history/blame/etc.
+    use("rhysd/git-messenger.vim")
 
     -- Treesitter (single-file highlighting/etc.)
     use({

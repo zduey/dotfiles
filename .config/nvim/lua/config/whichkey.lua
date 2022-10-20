@@ -50,6 +50,7 @@ function M.setup()
       s = { "<CMD>Neogit<CR>", "Status" },
       d = { "<CMD>DiffviewOpen<CR>", "Diff" },
       h = { "<CMD>DiffviewFileHistory<CR>", "History" },
+      m = { "<CMD>GitMessenger<CR>", "Messenger"}
     },
 
     f = {
