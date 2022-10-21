@@ -32,7 +32,7 @@ function M.setup ()
       })
       vim.cmd [[packadd packer.nvim]]
     end
-    -- Compile whenver this file changes
+    -- Compile whenever this file changes
     vim.cmd "autocmd BufWritePost plugins.lua source <afile> | PackerCompile"
   end
 
