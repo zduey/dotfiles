@@ -52,6 +52,8 @@ opt.textwidth = 120 -- Max number of characters per line
 opt.undodir = vim.fn.expand("~/.cache/nvim/undodir") -- Where to store 
 opt.undofile = true
 opt.viewoptions = "cursor,folds,slash,unix"
+opt.spell = true -- turn on spell check
+ope.spellang = { "en-us" } -- set spellcheck language to US English
 
 -- Highlight on yank
 vim.cmd [[
