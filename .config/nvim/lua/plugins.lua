@@ -37,6 +37,9 @@ function M.setup ()
   end
 
   local function setup_plugins(use)
+    -- Optimizer
+    use("lewis6991/impatient.nvim")
+
     -- Package management
     use("wbthomason/packer.nvim")
 
@@ -165,6 +168,7 @@ function M.setup ()
         disable = false,
       },
     }
+
     -- Bootstrap packer if required
     if packer_sync_required then
       require("notify")("Restart Neovim for changes to take effect.")
