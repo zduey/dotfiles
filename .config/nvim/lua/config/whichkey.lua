@@ -22,8 +22,9 @@ function M.setup()
   local mappings = {
     ["w"] = { "<CMD>update!<CR>", "Save" },
     ["q"] = { "<CMD>q!<CR>", "Quit" },
-    ["t"] = { "<CMD>NvimTreeToggle<CR>", "File Tree" },
+    ["n"] = { "<CMD>NvimTreeToggle<CR>", "File Tree" },
     ["s"] = { "<CMD>Telescope find_files<CR>", "Search" },
+    ["t"] = { "<CMD>ToggleTerm<CR>", "Terminal" },
 
     b = {
       name = "Buffer",
