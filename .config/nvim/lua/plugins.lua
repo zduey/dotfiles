@@ -115,6 +115,14 @@ function M.setup ()
     -- Git messenger for displaying popup with history/blame/etc.
     use("rhysd/git-messenger.vim")
 
+    -- Git signs for icons in the gutter
+    use({
+      "lewis6991/gitsigns.nvim",
+      config = function()
+        require("gitsigns").setup()
+      end,
+    })
+
     -- Treesitter (single-file highlighting/etc.)
     use({
       "nvim-treesitter/nvim-treesitter",
