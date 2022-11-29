@@ -7,12 +7,8 @@ cd ~
 git clone git@github.com:zduey/dotfiles.git
 ```
 
-Create the necessary symlinks
+Point local `.config/` to `.config/` in the repo:
 
 ```bash
-ln -s ~/dotfiles/vim ~/.config
-ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.config/* ~/.config/
 ```
-
-## Notes
